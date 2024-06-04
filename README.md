@@ -572,36 +572,31 @@ rm -rf S3-Lab
 cd /home/ubuntu/
 ```
 ```
-wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/lab_10_vpc_v0.13.tar.gz
+wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/vpc_lab.zip
 ```
 ```
-tar -xvf lab_10_vpc_v0.13.tar.gz
+unzip vpc_lab.zip
 ```
 ```
-cd lab_10_vpc/
+cd vpc_lab
 ls
 ```
 Now, Open the files one by one and replace your regions (**Ex:** ap-south-1) and for Availability Zones (**Ex:** ap-south-1a)
 ```
 vi vpc.tf
 ```
-In `vpc.tf` file Add `#` in front of line 12, ie... `enable_classiclink = "false"` and replace your `AZs`
 ```
 cat nat.tf
 ```
-No Updated need in `nat.tf`
 ```
 vi vars.tf
 ```
-In `vars.tf` file Update your Region.
 ```
 terraform init
 ```
 ```
 terraform plan
 ```
-**Note:** In `terraform plan` if it shows any warning just ignore it. But, if it shows any error we need to correct it.
-
 ```
 terraform apply -auto-approve
 ```
@@ -778,10 +773,10 @@ terraform destroy -auto-approve
 Remove the directory and Zip file using `rm -rf`
 ```
 cd ..
-rm -rf lab_10_vpc
+rm -rf vpc_lab
 ```
 ```
-rm -rf lab_10_vpc_v0.13.tar.gz
+rm -rf vpc_lab.zip
 ```
 #### =========================END of LAB-05=========================
 
@@ -792,13 +787,13 @@ rm -rf lab_10_vpc_v0.13.tar.gz
 cd /home/ubuntu/
 ```
 ```
-wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/lab_14_autoscaling.tar.gz
+wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/autoscaling_lab.zip
 ```
 ```
-tar -zxvf lab_14_autoscaling.tar.gz
+unzip autoscaling_lab.zip
 ```
 ```
-cd lab_14_autoscaling/
+cd autoscaling_lab/
 ls
 ```
 ```
@@ -865,10 +860,10 @@ terraform destroy
 Once done, remove the Directory and Zip file.
 ```
 cd ~
-rm -rf lab_14_autoscaling
+rm -rf autoscaling_lab
 ```
 ```
-rm -rf lab_14_autoscaling.tar.gz
+rm -rf autoscaling_lab.zip
 ```
 #### =========================END of LAB-06=========================
 
