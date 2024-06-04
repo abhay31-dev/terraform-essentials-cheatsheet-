@@ -794,7 +794,7 @@ cat autoscalingpolicy.tf
 ```
 vi vpc.tf
 ```
-In `vpc.tf` file Add `#` in front of line 7, ie... `enable_classiclink = "false"` and replace your `AZs` for `3 public Subnets` and `3 Private Subnets`
+In `vpc.tf` replace your `AZs` for `3 public Subnets` and `3 Private Subnets`
 ```
 vi vars.tf
 ```
