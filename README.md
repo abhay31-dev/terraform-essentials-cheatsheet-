@@ -794,11 +794,9 @@ cat autoscalingpolicy.tf
 ```
 vi vpc.tf
 ```
-In `vpc.tf` replace your `AZs` for `3 public Subnets` and `3 Private Subnets`
 ```
 vi vars.tf
 ```
-In `vars.tf` file replace your `region` and Include your `region's AMI ID` in the list.
 ```
 ssh-keygen -f mykey
 ls
