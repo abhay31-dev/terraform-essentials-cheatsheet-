@@ -38,18 +38,18 @@ sudo apt update
 sudo apt install wget unzip -y
 ```
 ```
-wget https://releases.hashicorp.com/terraform/1.10.3/terraform_1.10.3_linux_amd64.zip
+wget https://releases.hashicorp.com/terraform/1.10.5/terraform_1.10.5_linux_amd64.zip
 ```
 To know the latest Terraform version - [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 ```
-unzip terraform_1.10.3_linux_amd64.zip
+unzip terraform_1.10.5_linux_amd64.zip
 ```
 ```
 ls
 sudo mv terraform /usr/local/bin
 ```
 ```
-rm terraform_1.10.3_linux_amd64.zip
+rm terraform_1.10.5_linux_amd64.zip
 ```
 ```
 ls
@@ -64,7 +64,7 @@ terraform -v
 sudo apt-get install python3-pip -y
 ```
 ```
-sudo pip3 install awscli --break-system-packages
+sudo pip3 install awscli 
 ```
 ```
 aws configure
