@@ -776,7 +776,7 @@ rm -rf vpc_lab.zip
 cd /home/ubuntu/
 ```
 ```
-wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/autoscaling_lab.zip
+wget https://ansible-script.s3.us-west-1.amazonaws.com/autoscaling_lab.zip
 ```
 ```
 unzip autoscaling_lab.zip
