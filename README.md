@@ -776,7 +776,7 @@ rm -rf vpc_lab.zip
 cd /home/ubuntu/
 ```
 ```
-wget https://ansible-script.s3.us-west-1.amazonaws.com/autoscaling_lab.zip
+wget https://devops-code-sruti.s3.us-east-1.amazonaws.com/autoscaling_lab.zip
 ```
 ```
 unzip autoscaling_lab.zip
