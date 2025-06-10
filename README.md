@@ -859,10 +859,10 @@ rm -rf autoscaling_lab.zip
 cd /home/ubuntu
 ```
 ```
-wget https://s3.ap-south-1.amazonaws.com/files.cloudthat.training/devops/terraform-essentials/lab_12_rds.tar.gz
+wget https://devops-code-sruti.s3.us-east-1.amazonaws.com/rds_lab.zip
 ```
 ```
-tar -zxvf lab_12_rds.tar.gz
+unzip rds_lab.zip
 ```
 ```
 cd lab_12_rds
@@ -873,18 +873,18 @@ ls
 ```
 vi rds.tf
 ```
-In `rds.tf` file in line-24 comment the line by adding #.
+
 ```
 cat output.tf
 ```
 ```
 vi vpc.tf
 ```
-In `vpc.tf` file Add `#` in front of line 7, ie... `enable_classiclink = "false"` and replace your `AZs` for `3 Public Subnets` and `3 Private Subnets`
+
 ```
 vi vars.tf
 ```
-In `vars.tf` file replace your `region` and add your `region's AMI ID` in the list.
+
 ```
 ssh-keygen -f mykey
 ls
@@ -895,7 +895,7 @@ terraform init
 ```
 terraform plan
 ```
-`Note:` If you find any error on Line No-24 (`name = "mydb"`) just open file and Comment it by adding #.
+
 ```
 terraform apply -auto-approve
 ```
@@ -994,10 +994,10 @@ terraform destroy
 Once destroyed, Delete the directory and zip file as well.
 ```
 cd ~
-rm -rf lab_12_rds
+rm -rf rds_lab
 ```
 ```
-rm -rf lab_12_rds.tar.gz
+rm -rf rds_lab.zip
 ```
 #### =========================END of LAB-07=========================
 
