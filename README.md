@@ -396,25 +396,7 @@ cat output.tf
 ```
 cat vars.tf
 ```
-In `vars.tf` file delete all the lines and add the below code. Also, ensure to replace your `region` and Include your `region's Ubuntu AMI ID` to the list.
-```
-vi vars.tf
-```
-```
-variable "AWS_REGION" {
-  default = "us-east-1"
-}
 
-variable "AMIS" {
-  type = map(string)
-  default = {
-    us-east-2 = "ami-089c26792dcb1fbd4"
-    us-west-2 = "ami-00448a337adc93c05"
-    eu-west-1 = "ami-0e309a5f3a6dd97ea"
-  }
-}
-```
-Once replaced, save the changes.
 ```
 terraform init
 ```
